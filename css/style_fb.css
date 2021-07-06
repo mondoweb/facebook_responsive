@@ -1,0 +1,1382 @@
+/*     Preferisco lavorare  con le variabili    */
+
+:root {
+    --main-color: #f0f2f5;
+    --second-color: #4099FF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100%;
+    /*  100vh  */
+    width: 100%;
+    margin: 0.5px auto;
+    background-color: var(--main-color);
+    /*       border: 4px green dashed;      */
+}
+
+
+/* facoltativo nel container lo sfondo xche gia è indicato nel wrapper  */
+
+.wrapper {
+    padding: 1px;
+    background-color: #f0f2f5;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 56px;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+nav div {
+    max-width: 100%;
+}
+
+.primoStepnav {
+    display: flex;
+    width: 112px;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+    /*   border: 1px green dashed;    */
+}
+
+
+/*      .primoStepnav span:nth-child(1) {   display: none;  }    */
+
+.facebook {
+    display: none;
+}
+
+.inizicon {
+    display: none;
+}
+
+
+/*  -------    icona   ------- */
+
+.icona {
+    display: flex;
+    padding-left: 10px;
+    /*    border: 1px red solid;   */
+}
+
+.icona a {
+    text-decoration: none;
+}
+
+.icona a i {
+    font-size: 2.5em;
+    color: #0f92f3;
+}
+
+
+/*  -------     Cerca   ------- */
+
+.cerca {
+    display: flex;
+    padding-left: 10px;
+    /*  border: 1px yellow solid;  */
+}
+
+.primasearch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #f0f2f5;
+}
+
+.primasearch .i {
+    /* display: none; */
+    padding: 1px;
+}
+
+#search {
+    padding: 10px 20px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+.e {
+    display: none;
+}
+
+
+/*   sparizione della ricerca   */
+
+.ia {
+    display: none;
+}
+
+
+/*   sparizione della ricerca   */
+
+.ea {
+    display: none;
+    visibility: hidden;
+}
+
+.cerchio {
+    padding: 1px;
+    position: absolute;
+}
+
+.i {
+    display: flex;
+    align-items: center;
+    margin: 100px 0px 0px 100px;
+}
+
+#frec {
+    padding: 0px 3px;
+    font-size: 1.5rem;
+}
+
+.cerca i {
+    font-size: 1em;
+    padding: 5px;
+    color: #5f6771;
+}
+
+.doposearch {
+    padding: 1px;
+}
+
+
+/*  -------     Nav centrale home ecc..   ------- */
+
+.navcentrale {
+    display: flex;
+    margin-left: 120px;
+    max-width: 100%;
+}
+
+.tnav {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    max-width: 100%;
+    /*   border: 1px yellow solid;  */
+}
+
+
+/*    tooltip  */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    /*    border-bottom: 1px dotted black;  border: none;   */
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*  width: 50px; */
+    width: auto;
+    height: auto;
+    background-color: rgba(17, 16, 16, 0.7);
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 9px;
+    position: absolute;
+    z-index: 1;
+    top: 130%;
+    left: 50%;
+    margin-left: -24px;
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltiptext {
+    font: italic;
+    font-size: 0.9rem;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tnav .tooltip .tooltiptext {
+    top: 110.5%;
+}
+
+
+/* ------- fine tooltip-------- */
+
+.home {
+    display: flex;
+    width: 99px;
+    height: 100%;
+    border-bottom: 3px #1877f2 solid;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    max-width: 100%;
+}
+
+.home a,
+.band a {
+    text-decoration: none;
+    max-width: 100%;
+}
+
+.home i {
+    font-size: 25px;
+    color: #1877f2;
+    max-width: 100%;
+}
+
+.band {
+    display: flex;
+    width: 99px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    max-width: 100%;
+    text-decoration: none;
+    /* border: 1px rgb(204, 47, 178) solid; */
+}
+
+.band i {
+    font-size: 25px;
+    color: #7c7c7ce7;
+}
+
+.band:hover {
+    background-color: #f5f5f5;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+/*  -------   nav ultimo  -------  */
+
+
+/*  width 204px -  40px ognuno     */
+
+.navfine {
+    margin-left: 42px;
+    width: 100%;
+}
+
+.fnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 9px;
+}
+
+.navultim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f0f2f5;
+}
+
+.navultim i {
+    font-size: 18px;
+    color: #050505;
+}
+
+.navultim:hover {
+    background-color: #dfe3e7;
+    cursor: pointer;
+}
+
+
+/*   spazio  */
+
+.spazio {
+    width: 100%;
+    height: 1px;
+    border: 1px solid #000000;
+    /*    visibility: hidden; display: none; */
+}
+
+.border1 {
+    visibility: hidden;
+    display: none;
+}
+
+
+/*  ------  Contenitore pagina giu  ------    */
+
+.containerdown {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 1px;
+    margin-top: 56px;
+}
+
+.linealta {
+    height: 16px;
+    grid-column: 1/4;
+}
+
+
+/*  ------  parte sinistra  ------    */
+
+.sx {
+    display: grid;
+    margin: 1px auto;
+    padding: 2px 16px;
+    width: 720px;
+    /*  border: 1px rgb(47, 133, 204) solid;  */
+}
+
+.immaginiplus {
+    margin: 1px auto;
+    position: relative;
+    display: grid;
+    justify-content: center;
+    /*   border: 1px rgb(47, 204, 68) solid;    */
+}
+
+.immaginigruppo {
+    width: auto;
+    height: 235px;
+    padding: 0.5px;
+    margin: 0px auto;
+    margin-bottom: 30px;
+    display: grid;
+    /*   z-index: 1;   border: 1px rgb(204, 84, 47) solid;    */
+}
+
+.imageslide {
+    height: 230px;
+    padding: 12px 0px 15px 0px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    overflow: hidden;
+    max-width: 100%;
+    /*   border: 1px rgb(12, 12, 12) solid;   */
+}
+
+.primaimages {
+    padding: 2px;
+    /* opacity: 0.8; */
+    position: relative;
+    width: 111px;
+    height: 198px;
+    border-radius: 10px;
+    border: 2px transparent solid;
+    background-color: #ffffff;
+    margin: 0px auto;
+    overflow: hidden;
+    /*     border: 1px solid red;    */
+}
+
+.primaimages img {
+    width: 110px;
+    height: 198px;
+    /*  height: 129px; */
+    border-radius: 10px/* 10px 0px 0px */;
+    border: 2px transparent solid;
+    margin: 0px auto;
+    position: relative;
+    margin-left: -3px;
+}
+
+.primaimg {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.primaimg .utente {
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    border-radius: 50%;
+    border: 4px #166ada solid;
+    cursor: pointer;
+   
+}
+
+
+/*   +  image    */
+.plus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: 0px auto;
+    width: 35px;
+    height: 35px;
+}
+
+.images .plus{
+    bottom: -15px;
+}
+
+#quattro {
+    background-color: #0f92f3;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 4.5px solid #ffffff;
+    margin: 0px auto;
+    position: absolute;
+    bottom: 60px;
+    left: 39px;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+#quattro {
+    background-color: #0f92f3;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plus i {
+    color: white;
+    font-size: 1.2rem;
+    
+}
+
+.primot{
+    display: flex;
+    justify-content: center;
+    padding: 0px !important;
+    width: 100px !important;
+    height: 40px !important;
+    text-align: center;  
+    font-size: 1.3vw;
+    /* border: 1px solid red; */
+
+}
+
+
+/*  */
+.images {
+    padding: 2px;
+    opacity: 0.8;
+    position: relative;
+    cursor: pointer;
+}
+
+.images img {
+    border-radius: 10px;
+    width: 111px;
+    height: 198px;
+    border: 2px transparent solid;
+}
+
+.images .utente {
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    border-radius: 50%;
+    border: 4px #166ada solid;
+    cursor: pointer;
+}
+
+.utente:hover {
+    opacity: initial;
+    transform: none;
+    position: absolute;
+    box-shadow: initial;
+    transform: scale(1.015);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+
+.imagtesto {
+    position: absolute;
+    bottom: 3px;
+    left: 8px;
+    overflow: hidden;
+    padding: 12px;
+    color: #ffffff;
+    font-weight: bold;
+    width: 111px;
+    height: 55px;
+}
+
+
+
+.images img:hover {
+    background-color: #cccccc;
+    opacity: 0.85;
+    box-shadow: 1px 1px 1px 1px #dfe3e7;
+    transform: scale(1.015);
+}
+
+.primaimages:hover img {
+    background-color: rgba(250, 245, 245, 0.9);
+    opacity: 0.85;
+    transform: scale(1.015);
+    position: relative;
+    cursor: pointer;
+}
+
+.primaimages:hover {
+    background-color: transparent;
+    opacity: 0.85;
+    box-shadow: 1px 1px 1px 1px #dfe3e7;
+    cursor: pointer;
+    border: 2px transparent solid;
+}
+
+
+/*   Freccia verso dx    */
+
+.frecciadx {
+    position: absolute;
+    top: 80px;
+    right: -20px;
+    /* z-index: 1; */
+    width: 48px;
+    height: 48px;
+    vertical-align: middle;
+    text-decoration: none;
+    border-radius: 50%;
+    border: 1px rgb(247, 238, 225) solid;
+    background-color: #ffffff;
+}
+
+.frecciadx i {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    color: #5f6771;
+    border-radius: 50%;
+    font-size: 1.6rem;
+}
+
+.frecciadx:hover {
+    opacity: initial;
+    transform: scale(1.015);
+    position: absolute;
+    background-color: rgb(241, 235, 235);
+}
+
+
+/*  ------  pensando   ------    */
+
+.pensando {
+    visibility: hidden;
+    display: none;
+}
+
+
+/*  ------  pensierio video foto  ------    */
+
+.pensiero {
+    width: 500px;
+    height: 124px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 1px auto;
+    border-radius: 15px;
+    background-color: #ffffff;
+    margin-bottom: 16px;
+    box-shadow: 1px 1px 1px 1px #dfe3e7;
+    border: 1px #dfe0e3 solid;
+}
+
+.cosaPensi {
+    width: 468px;
+    height: 59px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    border-bottom: 1px #e4e6eb solid;
+}
+
+.cosaPensi .avatar {
+    margin: auto 1px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.cosaPensi .inp {
+    width: 405px;
+    border-radius: 20px;
+    height: 39px;
+    background-color: #f0f2f5;
+    padding: 3px 0px 3px 10px;
+    font-size: 20px;
+    color: #65677c;
+    display: flex;
+    align-items: center;
+}
+
+.cosaPensi .inp:hover {
+    background-color: #e4e7eb;
+}
+
+
+/*   ------    video foto -----  */
+
+.vidfoto {
+    width: 468px;
+    height: 49px;
+    gap: 0.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*  border: 1px rgb(203, 218, 7) solid;  */
+}
+
+.video {
+    width: 234px;
+    height: 40px;
+    margin: 1px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    /*  border: 1px red solid;  */
+}
+
+.video1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 142px;
+    height: 24px;
+    margin: 1px auto;
+    font-size: 17px;
+    gap: 10px;
+    /*   border: 1px #0f92f3 solid; */
+}
+
+.video1 i {
+    width: 24px;
+    height: 24px;
+    margin: auto 1px;
+    font-size: 1.3em;
+}
+
+.video:hover {
+    background-color: #f0f1f3;
+    cursor: pointer;
+}
+
+
+/*   ------   caricamento Video Crea 2     ------- */
+
+.pensiero2 {
+    width: 500px;
+    height: 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 1px auto;
+    border-radius: 15px;
+    margin-bottom: 16px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 1px 1px #dfe3e7;
+    border: 1px #dfe0e3 solid;
+}
+
+.cosaPensi2 {
+    width: 468px;
+    height: 35px;
+    /*  border-bottom: 1px rgb(230, 235, 170) solid;  */
+}
+
+.creavid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1px auto;
+    width: 100%;
+    height: 100%;
+    padding: 0px 1px 0px 1px;
+    gap: 1px;
+    /*   border: 1px #0f92f3 solid; */
+}
+
+.crea {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.crea2 {
+    width: 92px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.crea2 a {
+    text-decoration: none;
+    color: #0f92f3;
+}
+
+.crea2:hover {
+    background-color: #f0f1f3;
+    border-radius: 8px;
+}
+#cinque{
+    font-size: 1.8vw !important;
+}
+.vidfoto2 {
+    width: 468px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    /* border: 1px rgb(203, 218, 7) solid;  */
+}
+
+.avatarforplus {
+    display: flex;
+    gap: 15px;
+    height: 50px;
+    padding-left: 6px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.avatarfor {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/*  ----  Stati img e testo  ---- First Start    */
+
+.stato {
+    width: 500px;
+    height: 710px;
+    display: grid;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 1px auto;
+    border-radius: 15px;
+    background-color: #ffffff;
+    overflow: hidden;
+    margin-bottom: 16px;
+    box-shadow: 1px 1px 1px 1px #dfe3e7;
+    border: 1px #dfe0e3 solid;
+}
+
+
+/*   -----  Primo Testo  Stato  -----  */
+
+.profiloavatar {
+    display: flex;
+    width: 468px;
+    height: 52px;
+    margin: 1px auto;
+    /*  border: 1px rgb(236, 48, 14) solid;    */
+}
+
+.avatarplus {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3px;
+    padding-right: 15px;
+}
+
+.avatar {
+    width: 30px !important;
+    height: 30px !important;
+    vertical-align: middle;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.principale {
+    display: grid;
+    width: 384px;
+    gap: 3px;
+}
+
+.trepuntini {
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+    /* border: 1px rgb(236, 48, 14) solid; margin-left: 16px; */
+}
+
+.trepuntini i {
+    margin-left: 1px;
+    color: #687079;
+}
+
+.trepuntini:hover {
+    background-color: #e6e8eb;
+}
+
+
+/*   -----  Secondo Testo  Stato  -----  */
+
+.testostat {
+    display: flex;
+    justify-content: center;
+    width: 468px;
+    height: auto;
+    margin: 1px auto;
+    /*     border: 1px rgb(169, 7, 218) solid;   */
+}
+
+.testostat input {
+    display: none;
+    width: 200px;
+    border-radius: 20px;
+    height: 35px;
+}
+
+.testo1 {
+    display: flex;
+    justify-content: center;
+    /* overflow: hidden; */
+}
+
+
+/*   ---  Terzo   Stato immagine + barra  (mi piace- commenti - ecc.)  ---  */
+
+.statImag {
+    display: grid;
+}
+
+.statimagine {
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    overflow: hidden;
+    /*   border: 1px rgb(236, 48, 14) solid;  */
+}
+
+.statimagine img {
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+}
+
+.statofine {
+    width: 498px;
+    height: 40px;
+    padding: 0px 9px 0px 9px;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    justify-content: space-evenly;
+    overflow: hidden;
+    /*   border: 1px rgb(236, 48, 14) solid;  */
+}
+
+.statof1 {
+    width: 139px;
+    height: 32px;
+    /*    width: 139px; height: 32px;  */
+    display: flex;
+    align-items: center;
+    color: #414142;
+    justify-content: space-around;
+    max-width: 100%;
+}
+
+
+/* 
+#statof2 {  width: 139px; height: 32px;     
+                display: flex;  align-items: center;
+                justify-content: space-around; 
+                     }  
+ 
+#statof3 {  width: 139px; height: 32px;    
+            display: flex;  align-items: center;
+            justify-content: space-around; 
+               }         */
+
+#statof4 {
+    width: 50px;
+    height: 32px;
+    /*    width: 50px; height: 32px;  */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.statofinehover:hover {
+    background-color: #e6e8eb;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/*  ----  Stati img e testo  ---- First END    */
+
+
+/*  ------  parte destra  ------    */
+
+.dx {
+    display: grid;
+    width: 283px;
+    max-height: 100vh;
+    justify-content: center;
+    overflow: auto;
+    padding-bottom: 30px;
+    height: 100%;
+    /*      border: 1px rgb(47, 204, 152) solid;   */
+}
+
+
+/*   
+ .dxprima {
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.dxprima::-webkit-scrollbar{
+	-webkit-overflow-scrolling: auto;
+	width: 8px;
+}
+
+.dxprima::-webkit-scrollbar-thumb{
+	border-radius: 4px;
+    background-color: rgba(0,0,0,1);
+    box-shadow: 0 0 1px rgba(255,255,255,.5);
+}  */
+
+.dxprima {
+    overflow-y: auto;
+    position: fixed;
+    display: grid;
+    margin: 0 auto;
+    justify-content: center;
+    width: 275px;
+    /*     height: 555px ; 
+                555px    */
+    margin-left: 14px;
+    height: 100%;
+    padding-bottom: 50px;
+    /*   border: 1px black solid;         */
+}
+
+
+/* Barra di scorrimento scroll Mozilla   */
+
+body {
+    scrollbar-width: thin;
+    /* "auto" or "thin" */
+    scrollbar-color: rgb(110, 224, 224) rgb(17, 17, 246);
+    /*  scroll thumb & track */
+}
+
+
+/*     Barra di scorrimento scroll  Crome Safari Edge   */
+
+body::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: orange;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: blue;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb  */
+    border: 3px solid orange;
+}
+
+
+/*  ------   Prima   selezione    ------    */
+
+.primaSelect {
+    width: 250px;
+    height: 169px;
+    display: grid;
+    align-items: center;
+    margin-bottom: 3px;
+    /*     border: 1px red solid;     */
+}
+
+
+/*    Primo 1 riga    */
+
+.scitturaIniz {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 2px;
+    align-items: center;
+    height: 42px;
+    width: 250px;
+    margin: 1px auto;
+    /*  border-bottom: 1px red solid; */
+}
+
+.scitturaIniz p {
+    width: 214px;
+    height: 21px;
+    font-size: 1.2rem;
+    color: #687079;
+    font-weight: bold;
+}
+
+.scitturaIniz a {
+    display: grid;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 1px auto;
+}
+
+.scitturaIniz i {
+    display: grid;
+    width: 16px;
+    height: 20px;
+    color: #687079;
+    align-items: center;
+    margin-left: 7px;
+}
+
+.scitturaIniz a:hover {
+    background-color: #e6e8eb;
+}
+
+
+/*    Primo 2 riga   */
+
+.scrittseconda {
+    display: flex;
+    align-items: center;
+    top: 0;
+    padding-left: 5px;
+    width: 250px;
+    height: 42px;
+}
+
+.scrittseconda p {
+    padding-left: 25px;
+    color: #050505;
+}
+
+.scrittseconda:hover {
+    background-color: #e6e8eb;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/*    Primo 3 riga   */
+
+.campanell {
+    display: flex;
+    align-items: center;
+    width: 248px;
+    padding-left: 18px;
+    margin: 0.5px auto;
+    height: 35px;
+}
+
+.campanell p {
+    margin-left: 14px;
+    color: #687079;
+    font-size: 0.9rem;
+}
+
+.campanell i {
+    color: #687079;
+    font-size: 1.15rem;
+}
+
+.campanell:hover {
+    background-color: #e6e8eb;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/*    Primo 4 riga   */
+
+.creaProm {
+    display: flex;
+    align-items: center;
+    width: 248px;
+    height: 35px;
+    padding-left: 18px;
+    margin: 0.5px auto;
+}
+
+.creaProm p {
+    margin-left: 14px;
+    color: #687079;
+    font-size: 0.9rem;
+}
+
+.creaProm i {
+    color: #687079;
+    font-size: 1.15rem;
+}
+
+.creaProm:hover {
+    background-color: #e6e8eb;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.lineadx1 {
+    height: 4px;
+    width: 250px;
+    border-bottom: 1px solid #ced0d4;
+    margin: 1px auto;
+    margin-bottom: 2px;
+}
+
+
+/*  Seconda Selezione   */
+
+.secondaSelect {
+    width: 260px;
+    height: 100%;
+    /* height: 633px;                  */
+    /*       border: 1px  blue solid;      */
+}
+
+.secondselect2 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /*       border: 1px  rgb(255, 196, 0) solid;    */
+}
+
+.dxprimaselect {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 44px;
+    /*     border: 1px  rgb(0, 255, 149) solid;     */
+}
+
+.dxprimaselect p {
+    font-size: 1.2rem;
+    color: #687079;
+    font-weight: bold
+}
+
+.dxprimaselect a {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dxprimaselect i {
+    color: #687079;
+    font-size: 1.15rem;
+}
+
+#dxprimaselect {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dxprimaselect a:hover {
+    background-color: #e6e8eb;
+}
+
+
+/*   Utente in linea   */
+
+.selectdx {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 44px;
+    padding-left: 6px;
+    margin: 0.5px auto;
+    /*  border: 1px solid blue;   */
+}
+
+.selectdx img,
+p {
+    display: flex;
+    align-items: center;
+}
+
+.selectdx p {
+    margin-left: 9px;
+    font-size: 1.05rem;
+    color: #687079;
+    height: 100%;
+}
+
+.selectdx:hover {
+    background-color: #e6e8eb;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.lineadx2 {
+    height: 8px;
+    width: 250px;
+    margin: 1px auto;
+    margin-bottom: 2px;
+    border-bottom: 1px solid #ced0d4;
+}
+
+
+/*  Terza  Selezione   */
+
+.terzaSelect {
+    display: grid;
+    width: 250px;
+    height: 96px;
+    padding-left: 5px;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.terzaSelect p {
+    display: flex;
+    font-size: 1.14rem;
+    color: #687079;
+    height: 35px;
+    font-weight: bold;
+    align-items: center;
+}
+
+#conversgruppo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 250px;
+    height: 40px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+#conversgruppo a {
+    font-size: 1.075rem;
+    text-decoration: none;
+    padding-left: 5px;
+    color: #626568;
+}
+
+#conversgruppo i {
+    font-size: 1rem;
+    background-color: #d0d2d4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid rgb(241, 237, 237);
+}
+
+.terzaSelect:hover #conversgruppo {
+    background-color: #e5e8ec;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+
+/*
+#conversgruppo  i:hover {   background-color:  #babcbe  ;   z-index: 1;   }  */
+
+
+/*     Scrivi messaggio      */
+
+.strutturMail {
+    position: relative;
+    position: fixed;
+    top: 500px;
+    right: 20px;
+}
+
+.mail {
+    display: grid;
+    position: absolute;
+    top: 30px;
+    right: 3px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin: 1px auto;
+    z-index: 1;
+    border: 1px #d2d2d3 solid;
+    box-shadow: 1px 1px 1px 1px rgb(199, 196, 196);
+}
+
+
+/* --------  @media only screen and (max-width: 768px) {  }  -------   */
+
+
+/*
+        @media only screen and (max-width: 968px) { 
+                .wrapper  {   overflow: hidden;  max-width: 100%; }
+                 img {  overflow: hidden;  max-width: 100%;    }
+        }     /*

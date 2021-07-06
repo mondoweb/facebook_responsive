@@ -1,0 +1,462 @@
+/*   Foglio a parte  del css mediaqueries    */
+
+/*     @media only screen and (max-width: 768px) {  }   */
+
+@media only screen and (max-width: 970px) {
+  .dx {
+    display: none;
+  }
+  .navfine {
+    display: none;
+  }
+}
+
+/*  The end @media max-width:970px  */
+
+@media only screen and (max-width: 769px) {
+  .tooltip:hover .tooltiptext {
+    visibility: hidden;
+  }
+  /* Delete  serch    */
+  .e {
+    visibility: hidden;
+  }
+  .ea {
+    display: block;
+    visibility: visible;
+  }
+  .ea .i {
+    display: block;
+    visibility: visible;
+  }
+  .primasearch .i {
+    margin-left: -80px;
+    z-index: 1;
+  }
+  .cerchio {
+    overflow: hidden;
+  }
+}
+
+/* The End  @media 769px */
+
+@media only screen and (max-width: 745px) {
+  .wrapper {
+    background-color: white;
+  }
+  nav {
+    display: inline;
+    position: relative;
+  }
+  .primoStepnav {
+    display: flex;
+    width: 100vw;
+    padding: 0px 5px;
+    justify-content: space-between;
+  }
+  .icona {
+    display: none;
+  }
+  .facebook,
+  .inizicon {
+    display: block;
+  }
+  .facebook {
+    font-weight: bold;
+    color: #1877f2;
+    font-size: 1.65rem;
+    max-width: 100%;
+  }
+  /* .primoStepnav .facebook {
+    width: 300px;
+    display: flex;
+    justify-content: flex-start;
+  } */
+  /*     border: 1px solid black;    */
+  .inizicon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f0f2f5;
+    cursor: pointer;
+  }
+  .inizicon i {
+    font-size: 18px;
+    color: #050505;
+  }
+  /*  .inizicon:hover { background-color: #dfe3e7; cursor: pointer; }   */
+  .cerca,
+  .inizicon {
+    margin: 0px 7px;
+  }
+  /*     border: 1px solid black;     */
+  .navcentrale {
+    display: flex;
+    justify-content: start;
+    margin: 0px 10px;
+  }
+  .tnav span:nth-child(2) {
+    visibility: visible !important;
+    display: block !important;
+  }
+  .tnav span:nth-child(2) i {
+    display: flex;
+    justify-content: center;
+  }
+  .tnav span:nth-child(3) {
+    display: none;
+  }
+  .band i,
+  .home i {
+    font-size: 22px;
+    padding: 0px 4px;
+  }
+  .tnav span:nth-child(6) {
+    visibility: visible !important;
+    display: block !important;
+  }
+  .tnav span:nth-child(6) i {
+    display: flex;
+    justify-content: center;
+  }
+  .spazio {
+    visibility: visible !important;
+    display: block !important;
+    height: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px #e4e6eb solid;
+  }
+  .home,
+  .band {
+    width: 65px;
+    display: flex;
+    justify-content: center;
+  }
+  /*  ------    ------     */
+  .pensando {
+    visibility: visible !important;
+    display: block !important;
+    background-color: white;
+    margin: 5px 1px;
+    /*  border: 1px solid black;  */
+  }
+  .cosaPensando {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2px;
+    border-bottom: 1px #e4e6eb solid;
+  }
+  .cosaPensando .avatar {
+    margin: auto 1px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  .cosaPensando .inp {
+    border-radius: 20px;
+    height: 32px;
+    background-color: #f0f2f5;
+    margin-left: 12px;
+    padding: 10px;
+    font-size: 18px;
+    color: #65677c;
+  }
+
+  .cosaPensando #due {
+    font-size: 3.2vw;
+  }
+
+  .inp input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .trisFoto {
+    display: flex;
+    max-width: 100%;
+  }
+  .video:hover {
+    background-color: transparent;
+  }
+  .video:nth-child(2) {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 0px;
+    height: 60%;
+    margin: auto;
+  }
+  .border1 {
+    visibility: visible !important;
+    display: block !important;
+    height: 10px;
+    max-width: 100%;
+    width: 100% !important;
+    padding: 3px;
+    background-color: rgb(190, 190, 190);
+  }
+  .sx {
+    padding: 1px;
+    max-width: 100%;
+  }
+  /*   ---------   Immagini    --------      
+
+  .immaginiplus { margin: 0px auto;   }       */
+  .immaginigruppo {
+    height: 140px;
+    margin-top: -80px;
+    margin-left: -100px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .imageslide {
+    height: 160px;
+    padding: 12px 0px 15px 0px;
+    margin: 2px;
+    display: flex;
+    gap: 5px;
+    overflow: hidden;
+  }
+
+  /*   ------   Rimendionamento slid      --------   */
+  .primaimages,
+  .images {
+    width: 85px;
+    height: 140px;
+    max-width: 100%;
+    margin: 0px auto;
+  }
+  .primaimg {
+    height: 140px;
+  }
+  .primaimages img {
+    height: 140px;
+    width: 85px;
+  }
+
+  /*    */
+
+  .images .plus {
+    left: -15px;
+    bottom: -25px;
+  }
+
+  .primot {
+    display: flex;
+    align-items: flex-start;
+    width: 70px !important;
+    height: 32px !important;
+    padding: 0px !important;
+    padding-top: 3px !important;
+    /* border: 2px solid red; */
+  }
+
+  .imagtesto {
+    font-size: 1.3vw;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 70px;
+    height: 32px;
+    text-align: center;
+    /* border: 2px solid red; */
+  }
+  .images img {
+    width: 80px;
+    height: 140px;
+    max-width: 100%;
+  }
+  .frecciadx {
+    top: 0px;
+    right: 0px;
+  }
+
+  .pensiero,
+  .pensiero2 {
+    visibility: hidden;
+    display: none;
+  }
+
+  /*    -------------  -------------    */
+  .stato {
+    width: 500px;
+    height: 710px;
+    margin: 0px;
+    margin-left: -130px;
+    overflow: hidden;
+    display: grid;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+  }
+
+  .avatar {
+    font-size: 1rem;
+  }
+
+  .proncipale {
+    font-size: 0.9rem;
+  }
+
+  .testo1 {
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+  .statimagine img {
+    width: auto;
+    /* 500px */
+    max-width: 100%;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .imagtesto {
+    font-size: 1.7vw;
+  }
+  .immaginigruppo {
+    margin-left: -190px;
+  }
+  .stato {
+    width: 435px;
+    margin-left: -220px;
+  }
+  .avatarplus {
+    justify-content: flex-start;
+  }
+  .avatar {
+    width: 40px;
+    height: 40px;
+  }
+  .principale {
+    font-size: 0.75rem;
+  }
+
+  .testostat {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0;
+    width: 330px;
+  }
+
+  .testo1 {
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    width: 330px;
+    font-size: 3vw;
+    padding: 0 20px;
+    max-width: 100%;
+    /* text-align: center; */
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .statofine {
+    justify-content: start;
+  }
+  .statof1 {
+    width: 120px;
+    font-size: 1.1rem;
+  }
+  #statof4 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .tnav {
+    justify-content: start;
+  }
+  .video1 {
+    width: 100px;
+    font-size: 1.01rem;
+  }
+  .video1 i {
+    width: 24px;
+    height: 24px;
+    margin: auto 1px;
+    font-size: 0.8em;
+    max-width: 100%;
+  }
+
+  .imagtesto {
+    font-size: 2vw;
+  }
+
+  .immaginigruppo {
+    margin-left: -230px;
+  }
+  .stato {
+    width: 335px;
+    margin-left: -220px;
+  }
+  .statimagine img {
+    width: 340px;
+  }
+  .statofine {
+    justify-content: start;
+  }
+  .statof1 {
+    width: 100px;
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .cosaPensando .inp {
+    font-size: 18px;
+    max-width: 100%;
+  }
+  .video1 {
+    width: 60px;
+    font-size: 0.8rem;
+  }
+  .immaginigruppo {
+    margin-left: -250px;
+  }
+
+  .imagtesto {
+    font-size: 2.6vw;
+  }
+  .avatar {
+    width: 30px;
+    height: 30px;
+  }
+  .principale {
+    font-size: 0.5rem;
+  }
+  .stato {
+    width: 265px;
+    margin-left: -250px;
+  }
+  .statofine {
+    justify-content: start;
+  }
+  .statof1 {
+    width: 80px;
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 270px) {
+  .facebook {
+    font-size: 1.2rem;
+  }
+  .band i,
+  .home i {
+    font-size: 19px;
+  }
+  .cosaPensando .inp {
+    font-size: 12px;
+  }
+  .video1 {
+    width: 30px;
+  }
+}

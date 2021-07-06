@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="it">
+<!--   dir="ltr"   -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <link rel="icon" href="./img/icon-logo-fb.png">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style_fb.css">
+    <link rel="stylesheet" href="./css/style_face_device.css">
+
+    <title> FaceBook  Responsive </title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+
+
+</head>
+<body  onload="nomeProfilo()">
+       
+<div class=" container ">   
+
+    <div class=" wrapper  " >   
+
+            <div class="ea" style="display: none; ">    <!--  @media screen  -->
+                <span class="i ia" >   
+                     <i class="fas fa-arrow-left" id="frec2">  </i>
+                    <input type="text" id="search" placeholder=" Cerca su Facebook "> 
+                </span>
+            </div>
+
+
+    <nav>
+        <div class="primoStepnav">
+            <span class="facebook"> <span style="font-size: 2.0rem;">f</span>acebook </span>
+            <!-- @media  -->
+            <span class="icona">  <a href="#"> <i class="fab fa-facebook"></i>  </a> </span>
+
+            <span class="cerca"> 
+
+                <span class="primasearch ea1">  
+                
+                    <span class="cerchio" >   
+                        <i class="fas fa-search" >   </i> 
+                    </span>
+                    <span class="e"> 
+                            <span class="i" >    <i class="fas fa-arrow-left" id="frec" >  </i>
+                                <input type="text" id="search" placeholder=" Cerca su Facebook "> 
+                                </span>
+                    </span>
+                </span>
+            <!--  class="primaserch"   -->
+
+                <span class="doposearch">      </span>
+
+            </span>
+
+            <span class="inizicon" title="Messenger"> <i class="fab fa-facebook-messenger">   </i> </span>
+
+
+        </div>
+
+        <div class="navcentrale">
+
+                <span class="tnav">
+                        <span class="home tooltip" > 
+                            <a href="#">  <i class="fas fa-home"> 
+                                 <span class="tooltiptext"> Home  </span> </i>
+                            </a>
+                </span>
+
+                <span class="band" title="User" style="visibility: hidden; display: none;"> <a href="#"  >  <i class="fas fa-users"  >  </i> </a> </span>
+
+                <span class="band tooltip ">
+                    <a href="#">  <i class="fas fa-flag"> 
+                        <span class="tooltiptext"  style="margin-left: -30px;"  > Pagine  </span> </i>
+                    </a>
+                </span>
+                <span class="band tooltip"> 
+                    <a href="#">  
+                        <i class="fas fa-play-circle"> 
+                           <span class="tooltiptext"   style="margin-left: -30px;"   > Watch  </span> </i>
+                    </a>
+                </span>
+                <span class="band  tooltip"> <a href="#">   <i class="fas fa-archway">  <span class="tooltiptext"   style="margin-left: -47px;" > Marketplace </span> </i>
+                </a>
+                </span>
+                <span class="band" style="visibility: hidden; display: none;  "> <a href="#"  > <i class="fas fa-bell" >   </i>  </i> </a> </span>
+
+                <span class="band tooltip"> <a href="#">   <i class="fas fa-bars">  <span class="tooltiptext"   > Altro  </span> </i>
+                </a>
+                </span>
+            </span>
+
+        </div>
+
+        <div class="navfine">
+
+            <span class="fnav">
+                        <span class="navultim tooltip"  >   <a href="#" > <i class="fas fa-plus" >  <span class="tooltiptext"> Crea  </span> </i>
+            </a>
+            </span>
+            <span class="navultim tooltip"> <a href="#"> <i class="fab fa-facebook-messenger">  <span class="tooltiptext"  style="margin-left: -37px;" > Messenger  </span> </i>
+            </a>
+            </span>
+            <span class="navultim tooltip"> <a href="#">  <i class="fas fa-bell"  style="visibility: visible !important;">   <span class="tooltiptext"   style="margin-left: -30px;" > Notifiche  </span> </i>
+            </a>
+            </span>
+            <span class="navultim tooltip"> <a href="#">  <i class="fas fa-sort-down" >   <span class="tooltiptext"  style="margin-left: -40px;" > Account </span> </i>
+            </a>
+            </span>
+            </span>
+
+        </div>
+
+
+
+    </nav>
+
+    <span class="spazio">  </span>
+
+
+    <!--     @media query     -->
+
+    <div class="pensando">
+        <div class="cosaPensando">
+
+            <img src="./img/avatar12.png" alt="" class="avatar">
+            <!--    <input type="text"  placeholder="A che cosa stai pensando ? ">  -->
+            <span class="inp" id="due">  A che cosa stai pensando  ? </span>
+
+
+        </div>
+        <div class="trisFoto">
+
+            <span class="video"> <span class="video1">  <i class="fas fa-video" style="color: red;" > </i>   Live   </span> </span>
+            <span class="video"> <span class="video1">  <i class="fas fa-images" style="color: rgb(24, 185, 24);"> </i>    Foto    </span> </span>
+            <span class="video"> <span class="video1">    <i class="fas fa-video" style="color: rgb(212, 74, 240);  "> </i>    Stanza  </span> </span>
+
+        </div>
+    </div>
+    <span class="border1"> </span>
+
+    <!--    end @media query  -->
+
+    <div class=" containerdown" id="myDIV">
+        <span class="linealta"> </span>
+
+        <div class="sx">
+
+            <div class="immaginiplus">
+                <!--   Schermata sinistra   -->
+
+                <div class="immaginigruppo">
+
+                    <div class="imageslide">
+
+                        <span class="images"> 
+                            <img src="./img/facebook-10.jpg" alt="" title="" >
+                            <img src="./img/avatar12.png" alt="" class="utente">
+                            <span class="plus">
+                                <span id="quattro"> 
+                                    <i class="fas fa-plus">   </i> 
+                                </span> 
+                            </span>  
+                            <div class="imagtesto primot" id="uno">   Crea una storia</div>
+                        </span>
+
+                    
+                        <span class="images"> 
+                                    <img src="./img/frutt.jpg" alt="" title="" >
+                                    <img src="./img/avatar3.jpg" alt="" class="utente">  
+                                    <span class="imagtesto"  >   facebook</span>
+                        </span>
+
+                        <span class="images"> 
+                                    <img src="./img/animali.jpg" alt="" title="" >
+                                    <img src="./img/man.png" alt="" class="utente">
+                                    <span class="imagtesto"  >   facebook</span>
+                        </span>
+
+                        <span class="images"> 
+                                    <img src="./img/Orvieto.jpg" alt="" title="" >
+                                    <img src="./img/man1.png" alt="" class="utente">
+                                    <span class="imagtesto"  >   facebook </span>
+                        </span>
+
+                        <span class="images"> 
+                                    <img src="./img/nakagawa_shouko.jpg" alt="" title=""  >
+                                    <img src="./img/woman.png" alt="" class="utente" >
+                                    <span class="imagtesto"  >  facebook</span>
+
+                        </span>
+
+                        <span title="Vedi tutte le storie">  
+                            <a href="#"  class="frecciadx"   >   
+                                <i class="fas fa-arrow-right">  <!--  freccia DX   -->   </i>  
+                             </a> 
+                        </span>
+
+                        <!--     freccia finale slide-->
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+                <span class="border1" style="margin-left: -170px; margin-bottom: 25px;">   </span>
+
+                <!--  Primo Pensiero    -->
+
+                <div class="pensiero">
+                    <div class="cosaPensi">
+
+                        <img src="./img/avatar12.png" alt="" class="avatar">
+                        <!--    <input type="text"  placeholder="A che cosa stai pensando ? ">  -->
+                        <span class="inp" id="cinque">  A che cosa stai pensando  ? </span>
+
+
+                    </div>
+                    <div class="vidfoto">
+
+                        <span class="video"> <span class="video1">  <i class="fas fa-video" style="color: red;" > </i>   Video in diretta  </span> </span>
+                        <span class="video"> <span class="video1">  <i class="fas fa-images" style="color: rgb(24, 185, 24);"> </i>    Foto/Video  </span> </span>
+
+                    </div>
+                </div>
+
+
+                <!--  Secondo Pensiero    -->
+
+                <div class="pensiero2">
+
+                    <div class="cosaPensi2">
+                        <span class="creavid"> 
+                            <span class="crea"> 
+                                <i class="fas fa-video" style="color: rgb(240, 74, 74); font-size: 1.2em; "> </i>
+                                 <span style="color: black; padding-left: 3px; font-weight: bold;"> Stanze </span>
+
+                                <span style="color: #b0b1b6; font-size: 1.08em;"> 
+                                    Videochamata con gli amici 
+                                    <i class="fas fa-info-circle" title="Scopri come funzionano le stanze" style="font-size: 10px; cursor: pointer;"> </i> 
+                                </span>
+                            </span>
+                        <span class="crea2">  <a href="#"> Crea Stanza </a>   </span>
+                        </span>
+
+                    </div>
+
+                    <div class="vidfoto2">
+                        <div class="avatarforplus">
+                            <img src="./img/avatar.png" alt="" class="avatarfor">
+                            <img src="./img/avatar1.png" alt="" class="avatarfor">
+                            <img src="./img/avatar3.jpg" alt="" class="avatarfor">
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <!--  Stato Immagine pensiero     -->
+
+                <div class="stato">
+
+
+                    <!--  Stato 1     -->
+                    <div class="profiloavatar">
+                        <div class="avatarplus">
+                            <span>   <img src="./img/man2.png" alt="" class="avatar">   </span>
+                            <span class=" principale">  
+                                            <span style="font-weight: bold;">  Vivere Sano <span style="font-weight: normal;"> Si trova presso</span> Castellammare. </span>
+                            <span style="color:#656c76;">  1 h   <i class="fas fa-globe-asia"  style="margin-left: 3px;"> </i>   </span>
+                            </span>
+                            <span class="trepuntini"> <a href="#" style="text-decoration: none;">  
+                                            <i class="fas fa-ellipsis-h"> <!-- puntini --> </i> </a>  
+                                         </span>
+                        </div>
+                    </div>
+
+                    <div class="testostat">
+                        <input type="text" style="display: none;  width: 200px; border-radius: 20px; height: 35px; " placeholder="Scrivi">
+                        <span class="testo1">
+                             IL cibo è l'espressione dei nostri tempi cioè mangiar sano,
+                             se ad ogni pasto è associata un verosimile conteggio di calorie tra cui 
+                             si suddividono carboidrati proteine e grassi, uscira fuori un piatto di vera 
+                             eleganza arte e meraglia da ammirare!
+                        </span>
+                    </div>
+
+                    <div class="statImag">
+                        <div class="statimagine">
+                            <img src="./img/pasta.jpg " alt="Piatto di pasta" style="max-width: 100%;">
+                        </div>
+
+                        <span class="statofine">
+                                    <span class="statofinehover   statof1">  <i class="far fa-thumbs-up"></i> Mi Piace</span>
+                        <span class="statofinehover  statof1">  <i class="far fa-comment-dots"></i> Commenta</span>
+                        <span class="statofinehover  statof1">  <i class="fas fa-share-alt"></i>  Condividi</span>
+                        <span class="statofinehover" id="statof4">  <i class="far fa-user-circle" style="font-size: 1.2em;"></i>   </span>
+                        </span>
+                    </div>
+                </div>
+
+
+                <span class="border1" style="z-index: 1;">   </span>
+
+
+                <!--  Stato 2     -->
+
+                <div class="stato">
+
+                    <div class="profiloavatar">
+                        <div class="avatarplus">
+                            <span>   <img src="./img/woman1.png" alt="" class="avatar">   </span>
+                            <span class=" principale">  
+                                            <span style="font-weight: bold;">  Photo clip  <span style="font-weight: normal;"> Si trova presso</span> Bari. </span>
+                            <span style="color:#656c76;">  4 h   <i class="fas fa-globe-asia"  style="margin-left: 3px;"> </i>   </span>
+                            </span>
+                            <span class="trepuntini"> <a href="#" style="text-decoration: none;">  
+                                            <i class="fas fa-ellipsis-h"> <!-- puntini --> </i> </a>   </span>
+                        </div>
+                    </div>
+
+                    <div class="testostat">
+                        <input type="text" style="display: none;  width: 200px; border-radius: 20px; height: 35px; " placeholder="Scrivi">
+                        <span class="testo1"> 
+                                IL mondo è piu bello, se si partecipa in gruppo, in un mondo migliore 
+                                si concretizza, l'aiuto delle nostre forze aumenta la volonta di ognuno di noi.
+                        </span>
+                    </div>
+
+                    <div class="statImag">
+                        <div class="statimagine">
+                            <img src="./img/pietra.jpg" alt="" srcset="">
+                        </div>
+
+                        <span class="statofine">
+                                    <span class="statofinehover   statof1">  <i class="far fa-thumbs-up"></i> Mi Piace</span>
+                        <span class="statofinehover  statof1">  <i class="far fa-comment-dots"></i> Commenta</span>
+                        <span class="statofinehover  statof1">  <i class="fas fa-share-alt"></i>  Condividi</span>
+                        <span class="statofinehover" id="statof4">  <i class="far fa-user-circle" style="font-size: 1.2em;"></i>   </span>
+                        </span>
+
+                    </div>
+                </div>
+
+                <!--  Stato 3     -->
+
+                <div class="stato">
+
+                    <div class="profiloavatar">
+                        <div class="avatarplus">
+                            <span>   <img src="./img/avatar3.jpg" alt="" class="avatar">   </span>
+                            <span class=" principale">  
+                                            <span style="font-weight: bold;">  Pirata informatico  <span style="font-weight: normal;"> Si trova presso</span> Francia. </span>
+                            <span style="color:#656c76;">  7 h   <i class="fas fa-globe-asia"  style="margin-left: 3px;"> </i>   </span>
+                            </span>
+                            <span class="trepuntini"> <a href="#" style="text-decoration: none;">  
+                                            <i class="fas fa-ellipsis-h"> <!-- puntini --> </i> </a>   </span>
+                        </div>
+                    </div>
+
+                    <div class="testostat">
+                        <input type="text" placeholder="Scrivi">
+                        <!--    input non visibile Display:none    -->
+                        <span class="testo1">  
+                                    La scrittura sembra dunque aver avuto diverse origini, tanto in senso 
+                                    geografico quanto in senso funzionale. Il significato antropologico di 
+                                    questa fondamentale "invenzione" è quantomeno ambivalente: da un lato
+                                    essa rappresenta la radice dei concetti moderni di "universalità", 
+                                    "razionalità" e "scienza" in quanto rende possibile un confronto 
+                                    (articolato come mai prima) tra conoscenze di diversa natura e origine.
+                                    
+                        </span>
+                    </div>
+
+                    <div class="statImag">
+                        <div class="statimagine">
+                            <img src="./img/stock-photo-280507707.jpg" alt="">
+                        </div>
+
+                        <span class="statofine">
+                            <span class="statofinehover   statof1">  <i class="far fa-thumbs-up"></i> Mi Piace</span>
+                        <span class="statofinehover  statof1">  <i class="far fa-comment-dots"></i> Commenta</span>
+                        <span class="statofinehover  statof1">  <i class="fas fa-share-alt"></i>  Condividi</span>
+                        <span class="statofinehover" id="statof4">  <i class="far fa-user-circle" style="font-size: 1.2em;"></i>   </span>
+                        </span>
+
+                    </div>
+
+                </div>          <!--  class="stato" -->
+
+
+            </div>
+            <!-- class="immaginiplus" -->
+
+        </div>
+        <!--   class="sx"  -->
+
+
+
+
+        <!--  Parte Destra      -->
+
+        <div class="dx">
+
+            <div class="dxprima">
+
+
+                <!--          Prima parte dx         -->
+
+                <div class="primaSelect">
+                    <span class="scitturaIniz">  <p> Le tue Pagine</p>  <a href="">   <i class="fas fa-ellipsis-h"> <!-- puntini --> </i>    </a>  </span>
+                    <span class="scrittseconda">  <img src="./img/avatar12.png" alt="" class="avatar" style="width: 30px;  height: 30px;">    <p id="tre"> Nome Profilo </p>  </span>
+                    <span class="campanell"> <i class="fas fa-bell"> </i>  <p> 10  Notifiche</p>  </span>
+                    <span class="creaProm">   <i class="fas fa-bullhorn"></i>   <p> Crea promozione </p>  </span>
+                </div>
+
+
+                <span class="lineadx1">   <!--   linea    -->  </span>
+
+
+
+                <!--    Seconda parte dx   -->
+
+                <div class="secondaSelect">
+
+                    <div class="secondselect2">
+
+                        <span class=" dxprimaselect">  
+                                    <p> Contatti  </p> 
+                                    <span id=" dxprimaselect ">  
+                                    <a href="#">   <i class="fas fa-search" title="Cerca per nome o gruppo"> <!-- Icona cerca -->   </i>      </a>
+                                    <a href="#">   <i class="fas fa-ellipsis-h"  title="Opzioni"> <!-- puntini --> </i>    </a> 
+                                    </span>
+                        </span>
+
+
+
+                        <span class=" selectdx ">  
+                            <img src="./img/avatar1.png" alt="" class="avatar"  style="width: 30px;  height: 30px;" >  
+                            <p> Amici 1</p> 
+                        </span>
+
+
+                        <span class=" selectdx ">  
+                            <img src="./img/avatar2.jpg" alt="" class="avatar" style="width: 30px;  height: 30px;">  
+                            <p> Amici 2 </p> 
+                        </span>
+
+
+                        <span class=" selectdx ">  
+                                    <img src="./img/avatar3.jpg" alt="" class="avatar" style="width: 30px;  height: 30px;">  
+                                    <p>Amici 3 </p> 
+                                </span>
+
+
+                        <span class=" selectdx ">  
+                                    <img src="./img/man.png" alt="" class="avatar" style="width: 30px;  height: 30px;">  
+                                    <p>  Amici 4 </p> 
+                                </span>
+
+
+                        <span class=" selectdx ">  
+                                    <img src="./img/woman.png" alt="" class="avatar" style="width: 30px;  height: 30px;">  
+                                    <p> Amici 5 </p> 
+                                </span>
+
+
+
+                        <span class=" selectdx ">  
+                                    <img src="./img/man1.png" alt="" class="avatar" style="width: 30px;  height: 30px;">  
+                                    <p>  Amici  6 </p> 
+                                </span>
+
+
+                        <span class=" selectdx ">  
+                                    <img src="./img/man2.png" alt="" class="avatar" style="width: 30px;  height: 30px;">  
+                                    <p> Amici  7  </p> 
+                                </span>
+
+
+                        <span class=" selectdx ">  
+                                    <img src="./img/man3.png" alt="" class="avatar" style="width: 30px;  height: 30px;">  
+                                    <p> Amici 8  </p> 
+                                </span>
+
+
+                        <span class=" selectdx ">  
+                                    <img src="./img/woman1.png" alt="" class="avatar" style="width: 30px;  height: 30px;">  
+                                    <p>  Amici 9 </p> 
+                                </span>
+
+
+                        <span class=" selectdx ">  
+                                    <img src="./img/avatar.png" alt="" class="avatar" style="width: 30px;  height: 30px;">  
+                                    <p> Amici 10  </p> 
+                        </span>
+
+
+
+                        <span class=" selectdx ">  
+                            <img src="./img/avatar1.png" alt="" class="avatar"  style="width: 30px;  height: 30px;" >  
+                            <p> Amici 11</p> 
+                        </span>
+
+
+                        <span class=" selectdx ">  
+                            <img src="./img/avatar2.jpg" alt="" class="avatar" style="width: 30px;  height: 30px;">  
+                            <p> Amici 12 </p> 
+                        </span>
+
+
+                        <span class=" selectdx ">  
+                                    <img src="./img/avatar3.jpg" alt="" class="avatar" style="width: 30px;  height: 30px;">  
+                                    <p>Amici 13 </p> 
+                                </span>
+
+
+                        <span class=" selectdx ">  
+                                    <img src="./img/man.png" alt="" class="avatar" style="width: 30px;  height: 30px;">  
+                                    <p>  Amici 14 </p> 
+                                </span>
+
+
+                        <span class=" selectdx ">  
+                                    <img src="./img/woman.png" alt="" class="avatar" style="width: 30px;  height: 30px;">  
+                                    <p> Amici 15 </p> 
+                                </span>
+
+
+
+                        <span class=" selectdx ">  
+                                    <img src="./img/man1.png" alt="" class="avatar" style="width: 30px;  height: 30px;">  
+                                    <p>  Amici  16 </p> 
+                                </span>
+
+
+                        <span class=" selectdx ">  
+                                    <img src="./img/man2.png" alt="" class="avatar" style="width: 30px;  height: 30px;">  
+                                    <p> Amici  17  </p> 
+                                </span>
+
+
+                        <span class=" selectdx ">  
+                                    <img src="./img/man3.png" alt="" class="avatar" style="width: 30px;  height: 30px;">  
+                                    <p> Amici 18  </p> 
+                                </span>
+
+
+                        <span class=" selectdx ">  
+                                    <img src="./img/woman1.png" alt="" class="avatar" style="width: 30px;  height: 30px;">  
+                                    <p>  Amici 19 </p> 
+                                </span>
+
+
+                        <span class=" selectdx ">  
+                                    <img src="./img/avatar.png" alt="" class="avatar" style="width: 30px;  height: 30px;">  
+                                    <p> Amici 20  </p> 
+                        </span>
+
+                        <span class=" selectdx ">  
+                            <img src="./img/woman.png" alt="" class="avatar" style="width: 30px;  height: 30px;">  
+                            <p> Amici  </p> 
+                        </span>
+
+
+
+
+
+
+                        <span class="lineadx2">   <!--  linea  -->  </span>
+
+
+                        <!--  --------  Terza parte dx  ---------  -->
+
+                        <div class="terzaSelect">
+                            <span> <p> Conversazione di gruppo   </p>  </span>
+                            <span id="conversgruppo"> 
+                                    <i class="fas fa-plus">  <!--   messaggio    -->  </i> 
+                                    <a href="#">    Crea un nuovo gruppo   </a> 
+                             </span>
+                        </div>
+
+
+
+
+                    </div>         <!--   class => .secondselect2 -->
+
+                </div>        <!--  class  => .secondaSelect -->
+
+
+
+
+
+
+
+            </div>  <!--    class => .dxprima -->
+
+
+
+            <!--  Scrivi messaggio  -->
+            <div class="strutturMail" title="Nuovo Messagio">
+                <span class="mail">   <i class="fas fa-envelope-open-text"></i>  </span>
+            </div>
+
+
+        </div>       <!--   class => .dx -->
+
+
+
+    </div>    <!--   class => myDiv -->
+
+
+    </div>  <!--  .wrapper   -->
+
+    </div>  <!--   .container     -->
+
+
+
+</body>
+
+
+<script src="./js/mainFb.js"> </script>
+
+</html>
