@@ -1,6 +1,6 @@
 
+// JAVASCRIPT PURO  clousures 
 
-// JAVASCRIPT PURO
 function nomeProfilo() {
     alert(" Questa pagina si puo visualizzare anche, 'Responsive' da  smartphone  ");
 
@@ -43,5 +43,5 @@ $(document).ready(function() {
 
 
 
-/*   -------------     END    -------------    */
+/*   -------------      END    -------------    */
 
