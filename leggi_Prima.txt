@@ -15,7 +15,7 @@ Scopo assunzione,  una parte delle mie Skills:
  anche utilizando Sql, Mysql per i database relazionali, oppure conoscendo 
  un po di  ReactJs, oppure Angular, o con altri linguaggi backend che 
  conosco (solo di base) lato back-end.
-
+ 
   
 Contatti  
 linkedin:     https://www.linkedin.com/in/tommaso-donnarumma-63896966/
