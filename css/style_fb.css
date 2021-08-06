@@ -13,11 +13,10 @@
 
 .container {
     height: 100%;
-    /*  100vh  */
     width: 100%;
     margin: 0.5px auto;
     background-color: var(--main-color);
-    /*       border: 4px green dashed;      */
+          /* border: 4px green dashed;      */
 }
 
 
@@ -49,7 +48,6 @@ nav div {
     height: 56px;
     justify-content: center;
     align-items: center;
-    /*   border: 1px green dashed;    */
 }
 
 
@@ -87,7 +85,7 @@ nav div {
 .cerca {
     display: flex;
     padding-left: 10px;
-    /*  border: 1px yellow solid;  */
+
 }
 
 .primasearch {
@@ -174,7 +172,7 @@ nav div {
     align-items: center;
     gap: 9px;
     max-width: 100%;
-    /*   border: 1px yellow solid;  */
+
 }
 
 
@@ -183,7 +181,6 @@ nav div {
 .tooltip {
     position: relative;
     display: inline-block;
-    /*    border-bottom: 1px dotted black;  border: none;   */
 }
 
 .tooltip .tooltiptext {
@@ -191,7 +188,6 @@ nav div {
     display: flex;
     align-items: center;
     justify-content: center;
-    /*  width: 50px; */
     width: auto;
     height: auto;
     background-color: rgba(17, 16, 16, 0.7);
@@ -276,7 +272,7 @@ nav div {
 /*  -------   nav ultimo  -------  */
 
 
-/*  width 204px -  40px ognuno     */
+
 
 .navfine {
     margin-left: 42px;
@@ -331,10 +327,11 @@ nav div {
 
 .containerdown {
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr auto;
+    grid-template-rows: 1fr  ;
+    grid-template-columns: 75%  25% ;
     gap: 1px;
     margin-top: 56px;
+    padding-bottom: 50px;
 }
 
 .linealta {
@@ -350,7 +347,6 @@ nav div {
     margin: 1px auto;
     padding: 2px 16px;
     width: 720px;
-    /*  border: 1px rgb(47, 133, 204) solid;  */
 }
 
 .immaginiplus {
@@ -358,7 +354,6 @@ nav div {
     position: relative;
     display: grid;
     justify-content: center;
-    /*   border: 1px rgb(47, 204, 68) solid;    */
 }
 
 .immaginigruppo {
@@ -368,7 +363,6 @@ nav div {
     margin: 0px auto;
     margin-bottom: 30px;
     display: grid;
-    /*   z-index: 1;   border: 1px rgb(204, 84, 47) solid;    */
 }
 
 .imageslide {
@@ -385,7 +379,6 @@ nav div {
 
 .primaimages {
     padding: 2px;
-    /* opacity: 0.8; */
     position: relative;
     width: 111px;
     height: 198px;
@@ -400,8 +393,7 @@ nav div {
 .primaimages img {
     width: 110px;
     height: 198px;
-    /*  height: 129px; */
-    border-radius: 10px/* 10px 0px 0px */;
+    border-radius: 10px;
     border: 2px transparent solid;
     margin: 0px auto;
     position: relative;
@@ -481,9 +473,7 @@ nav div {
     width: 100px !important;
     height: 40px !important;
     text-align: center;  
-    font-size: 1.3vw;
-    /* border: 1px solid red; */
-
+    font-size: 1.2vw;
 }
 
 
@@ -569,7 +559,6 @@ nav div {
     position: absolute;
     top: 80px;
     right: -20px;
-    /* z-index: 1; */
     width: 48px;
     height: 48px;
     vertical-align: middle;
@@ -723,7 +712,6 @@ nav div {
 .cosaPensi2 {
     width: 468px;
     height: 35px;
-    /*  border-bottom: 1px rgb(230, 235, 170) solid;  */
 }
 
 .creavid {
@@ -735,7 +723,6 @@ nav div {
     height: 100%;
     padding: 0px 1px 0px 1px;
     gap: 1px;
-    /*   border: 1px #0f92f3 solid; */
 }
 
 .crea {
@@ -769,7 +756,7 @@ nav div {
     height: 60px;
     display: flex;
     align-items: center;
-    /* border: 1px rgb(203, 218, 7) solid;  */
+  
 }
 
 .avatarforplus {
@@ -812,6 +799,7 @@ nav div {
 
 .profiloavatar {
     display: flex;
+    justify-content: center;
     width: 468px;
     height: 52px;
     margin: 1px auto;
@@ -848,7 +836,6 @@ nav div {
     margin-right: 10px;
     width: 35px;
     height: 35px;
-    /* border: 1px rgb(236, 48, 14) solid; margin-left: 16px; */
 }
 
 .trepuntini i {
@@ -924,7 +911,6 @@ nav div {
 .statof1 {
     width: 139px;
     height: 32px;
-    /*    width: 139px; height: 32px;  */
     display: flex;
     align-items: center;
     color: #414142;
@@ -933,16 +919,6 @@ nav div {
 }
 
 
-/* 
-#statof2 {  width: 139px; height: 32px;     
-                display: flex;  align-items: center;
-                justify-content: space-around; 
-                     }  
- 
-#statof3 {  width: 139px; height: 32px;    
-            display: flex;  align-items: center;
-            justify-content: space-around; 
-               }         */
 
 #statof4 {
     width: 50px;
@@ -967,13 +943,13 @@ nav div {
 
 .dx {
     display: grid;
-    width: 283px;
-    max-height: 100vh;
+    width: 98%;
+    max-height: 100vmax;
     justify-content: center;
     overflow: auto;
     padding-bottom: 30px;
     height: 100%;
-    /*      border: 1px rgb(47, 204, 152) solid;   */
+    border: 1px rgb(47, 204, 152) solid;  
 }
 
 
@@ -999,14 +975,12 @@ nav div {
     position: fixed;
     display: grid;
     margin: 0 auto;
-    justify-content: center;
-    width: 275px;
-    /*     height: 555px ; 
-                555px    */
-    margin-left: 14px;
-    height: 100%;
-    padding-bottom: 50px;
-    /*   border: 1px black solid;         */
+    justify-content: flex-end ;
+    width: auto;
+    right: 0;
+    max-height: 100vh;
+    margin-bottom: 50px;
+      border: 1px black solid;        
 }
 
 
@@ -1063,7 +1037,7 @@ body::-webkit-scrollbar-thumb {
     height: 42px;
     width: 250px;
     margin: 1px auto;
-    /*  border-bottom: 1px red solid; */
+  
 }
 
 .scitturaIniz p {
@@ -1192,7 +1166,6 @@ body::-webkit-scrollbar-thumb {
 .secondaSelect {
     width: 260px;
     height: 100%;
-    /* height: 633px;                  */
     /*       border: 1px  blue solid;      */
 }
 
@@ -1372,11 +1345,3 @@ p {
 }
 
 
-/* --------  @media only screen and (max-width: 768px) {  }  -------   */
-
-
-/*
-        @media only screen and (max-width: 968px) { 
-                .wrapper  {   overflow: hidden;  max-width: 100%; }
-                 img {  overflow: hidden;  max-width: 100%;    }
-        }     /*
