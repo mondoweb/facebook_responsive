@@ -949,7 +949,7 @@ nav div {
     overflow: auto;
     padding-bottom: 30px;
     height: 100%;
-    border: 1px rgb(47, 204, 152) solid;  
+    /* border: 1px rgb(47, 204, 152) solid;   */
 }
 
 
@@ -980,7 +980,7 @@ nav div {
     right: 0;
     max-height: 100vh;
     margin-bottom: 50px;
-      border: 1px black solid;        
+      /* border: 1px black solid;         */
 }
 
 
